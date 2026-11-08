@@ -1,138 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8f5">
-  <meta name="description" content="Personal portfolio of a computer science student interested in cybersecurity, software engineering, and building useful things.">
-  <title>Your Name — Computer Science & Cybersecurity</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f7f8f5" name="theme-color"/>
+<meta content="Aden Kallery — University of Georgia computer science student focused on offensive security, cybersecurity competitions, and software engineering." name="description"/>
+<title>Aden Kallery | Computer Science &amp; Cybersecurity</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div aria-hidden="true" class="scroll-progress" id="scroll-progress"></div>
+<header class="site-header" id="top">
+<div class="container header-inner">
+<a aria-label="Back to top" class="brand" href="#top"><span aria-hidden="true" class="brand-symbol">A<span class="brand-dot">.</span></span><span class="brand-word">aden<span class="muted">/</span>portfolio</span></a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#resume">Résumé</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="header-actions">
+<button aria-label="Switch to dark theme" class="icon-button theme-toggle" title="Toggle theme" type="button">
+<svg aria-hidden="true" class="sun-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+<svg aria-hidden="true" class="moon-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20.9 13.4A9 9 0 0 1 10.6 3.1 9 9 0 1 0 20.9 13.4Z"></path></svg>
+</button>
+<a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu" class="icon-button menu-toggle" type="button">
+<span></span><span></span>
+</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobile-nav">
+<a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#resume">Résumé</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero section-pad">
+<div class="container hero-grid">
+<div class="hero-copy reveal">
+<div class="eyebrow">COMPUTER SCIENCE  /  OFFENSIVE SECURITY  /  SOFTWARE</div>
+<h1 id="hero-title">Build with curiosity.<br/><span class="hero-contrast">Secure with purpose<span class="hero-period">.</span></span></h1>
+<p class="hero-description">I'm <strong data-profile-name="">Aden Kallery</strong>, a computer science student at the <strong>University of Georgia</strong> focused on offensive security, software development, and hands-on systems engineering. I enjoy understanding how things work, finding their weaknesses, and making them better.</p>
+<div class="hero-buttons">
+<a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+<a class="button button-outline" href="assets/Aden_Kallery_Resume.pdf" rel="noopener noreferrer" target="_blank">View résumé <span aria-hidden="true">↗</span></a>
+</div>
+<div class="hero-meta"><span><span aria-hidden="true" class="pulse"></span> University of Georgia</span><span class="meta-separator">/</span><span>Expected graduation: May 2029</span></div>
+</div>
+<div aria-label="Decorative illustration of a software and cybersecurity workspace" class="hero-visual reveal">
+<div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+<div aria-hidden="true" class="visual-corner corner-one">+</div>
+<div aria-hidden="true" class="visual-corner corner-two">+</div>
+<div class="visual-card code-card">
+<div class="visual-card-top"><div aria-hidden="true" class="window-dots"><i></i><i></i><i></i></div><span>hello_world.js</span><span class="card-top-icon">↗</span></div>
+<div aria-hidden="true" class="code-content"><div><span class="line-no">01</span> <span class="syntax-purple">const</span> developer = {</div><div><span class="line-no">02</span>   focus: <span class="syntax-green">"security"</span>,</div><div><span class="line-no">03</span>   mindset: <span class="syntax-green">"curious"</span>,</div><div><span class="line-no">04</span>   status: <span class="syntax-green">"building"</span></div><div><span class="line-no">05</span> };</div><div><span class="line-no">06</span> <span class="syntax-purple">const</span> future = <span class="syntax-orange">"create"</span>;</div><div><span class="line-no">07</span> <span class="cursor-line">▍</span></div></div>
+</div>
+<div class="security-pill"><span aria-hidden="true" class="lock-mark">✳</span><div><strong>Think. Build. Secure.</strong><small>Always learning, always shipping.</small></div><span class="pill-check">✓</span></div>
+<div class="visual-label label-a">01 / DESIGN</div><div class="visual-label label-b">02 / DEFEND</div>
+</div>
+</div>
+<div class="container hero-bottom"><span>SCROLL TO EXPLORE</span><span aria-hidden="true" class="line-down"></span><span>001 — 006</span></div>
+</section>
+<section aria-labelledby="about-title" class="about section-pad" id="about">
+<div class="container about-grid">
+<div class="section-label reveal"><span class="index">01</span> / A LITTLE ABOUT ME</div>
+<div class="about-content reveal">
+<h2 class="section-title" id="about-title">From how it works to how it breaks.</h2><p>I study computer science at the University of Georgia, where I combine software and systems fundamentals with practical offensive-security work. My interests include vulnerability analysis, reverse engineering, penetration testing, and secure infrastructure.</p><p>My experience spans router firmware research, building and hardening Linux servers, administering a Flask/PostgreSQL application under attack, and competing in live security challenges. I enjoy technical work that requires both careful analysis and clear communication.</p>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Back to top"><span class="brand-symbol" aria-hidden="true">N<span class="brand-dot">.</span></span><span class="brand-word">yourname<span class="muted">/</span>portfolio</span></a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#resume">Résumé</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13.4A9 9 0 0 1 10.6 3.1 9 9 0 1 0 20.9 13.4Z"/></svg>
-        </button>
-        <a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
-        <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-          <span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#resume">Résumé</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main id="main">
-    <section class="hero section-pad" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="availability-dot"></span> OPEN TO LEARNING, BUILDING & COLLABORATING</div>
-          <h1 id="hero-title">Curious by nature.<br><span class="hero-contrast">Secure by design<span class="hero-period">.</span></span></h1>
-          <p class="hero-description">I'm <strong data-profile-name>Your Name</strong>, a computer science student exploring the intersection of <strong>software engineering</strong> and <strong>cybersecurity</strong>. I turn complex problems into thoughtful, practical solutions.</p>
-          <div class="hero-buttons">
-            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="resume.html">View résumé <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero-meta"><span><span class="pulse" aria-hidden="true"></span> Available for opportunities</span><span class="meta-separator">/</span><span>Based in the U.S.</span></div>
-        </div>
-        <div class="hero-visual reveal" aria-label="Decorative illustration of a software and cybersecurity workspace">
-          <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
-          <div class="visual-corner corner-one" aria-hidden="true">+</div>
-          <div class="visual-corner corner-two" aria-hidden="true">+</div>
-          <div class="visual-card code-card">
-            <div class="visual-card-top"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>hello_world.js</span><span class="card-top-icon">↗</span></div>
-            <div class="code-content" aria-hidden="true"><div><span class="line-no">01</span> <span class="syntax-purple">const</span> developer = {</div><div><span class="line-no">02</span> &nbsp; focus: <span class="syntax-green">"security"</span>,</div><div><span class="line-no">03</span> &nbsp; mindset: <span class="syntax-green">"curious"</span>,</div><div><span class="line-no">04</span> &nbsp; status: <span class="syntax-green">"building"</span></div><div><span class="line-no">05</span> };</div><div><span class="line-no">06</span> <span class="syntax-purple">const</span> future = <span class="syntax-orange">"create"</span>;</div><div><span class="line-no">07</span> <span class="cursor-line">▍</span></div></div>
-          </div>
-          <div class="security-pill"><span class="lock-mark" aria-hidden="true">✳</span><div><strong>Think. Build. Secure.</strong><small>Always learning, always shipping.</small></div><span class="pill-check">✓</span></div>
-          <div class="visual-label label-a">01 / DESIGN</div><div class="visual-label label-b">02 / DEFEND</div>
-        </div>
-      </div>
-      <div class="container hero-bottom"><span>SCROLL TO EXPLORE</span><span class="line-down" aria-hidden="true"></span><span>001 — 006</span></div>
-    </section>
-
-    <section id="about" class="about section-pad" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div class="section-label reveal"><span class="index">01</span> / A LITTLE ABOUT ME</div>
-        <div class="about-content reveal">
-          <h2 id="about-title" class="section-title">I like making complicated things <em>make sense.</em></h2>
-          <p>I'm a computer science student with a growing focus on cybersecurity, problem-solving, and creating technology people can trust. I enjoy understanding how systems work — and how they can work better.</p>
-          <p>From analyzing network traffic and tackling CTF challenges to writing clean software, I bring curiosity, persistence, and an eye for detail to every problem.</p>
-          <a class="text-link" href="#contact">More about working together <span aria-hidden="true">↗</span></a>
-          <div class="about-highlights"><div><span class="highlight-icon" aria-hidden="true">⌘</span><strong>Build with purpose</strong><span>Thoughtful software, useful outcomes.</span></div><div><span class="highlight-icon" aria-hidden="true">◎</span><strong>Think like an analyst</strong><span>Question assumptions. Follow evidence.</span></div><div><span class="highlight-icon" aria-hidden="true">↗</span><strong>Keep growing</strong><span>Curiosity is a competitive advantage.</span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section section-pad" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading reveal"><div><div class="section-label"><span class="index">02</span> / SELECTED WORK</div><h2 id="projects-title" class="section-title">A few things I'm <em>building.</em></h2></div><p>Sample project concepts to personalize with your own repositories, screenshots, and results.</p></div>
-        <div class="filter-bar reveal" role="group" aria-label="Filter projects"><button class="filter-button active" data-filter="all" aria-pressed="true">All work <span>04</span></button><button class="filter-button" data-filter="security" aria-pressed="false">Cybersecurity</button><button class="filter-button" data-filter="software" aria-pressed="false">Software</button></div>
-        <div class="projects-grid">
-          <article class="project-card reveal" data-category="security">
-            <div class="project-art art-packets" aria-hidden="true"><div class="art-grid"></div><div class="flow-node flow-left">01</div><div class="flow-node flow-middle">02</div><div class="flow-node flow-right">03</div><svg class="flow-lines" viewBox="0 0 500 220"><path d="M108 110 H234 H368" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5 7"/><path d="m359 103 9 7-9 7" fill="none" stroke="currentColor" stroke-width="2"/></svg><div class="art-caption">TRAFFIC / ANALYSIS</div></div>
-            <div class="project-body"><div class="project-number">01 <span>CYBERSECURITY</span></div><h3>Network Traffic Analyzer</h3><p>A packet-analysis concept for understanding protocols, spotting anomalies, and turning raw captures into useful findings.</p><div class="project-bottom"><div class="tags"><span>Python</span><span>Wireshark</span><span>Networking</span></div><button type="button" class="project-open" data-project="network" aria-label="View Network Traffic Analyzer details">↗</button></div></div>
-          </article>
-          <article class="project-card reveal" data-category="security">
-            <div class="project-art art-ctf" aria-hidden="true"><div class="ctf-terminal"><span class="term-prompt">$</span> explore --challenge security<br><span class="term-output">&gt; analyze. document. learn.</span><br><span class="term-prompt">$</span> <span class="term-cursor">▌</span></div><div class="ctf-badge">{ CTF }</div><div class="art-caption">RESEARCH / WRITEUPS</div></div>
-            <div class="project-body"><div class="project-number">02 <span>CYBERSECURITY</span></div><h3>CTF Notes & Writeups</h3><p>A collection of documented security challenges, investigation workflows, and lessons learned through hands-on practice.</p><div class="project-bottom"><div class="tags"><span>Linux</span><span>Forensics</span><span>Research</span></div><button type="button" class="project-open" data-project="ctf" aria-label="View CTF Notes and Writeups details">↗</button></div></div>
-          </article>
-          <article class="project-card reveal" data-category="software">
-            <div class="project-art art-monitor" aria-hidden="true"><div class="monitor-window"><div class="monitor-line"><span>file_integrity.log</span><span class="monitor-live">● LIVE</span></div><div class="monitor-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="monitor-status">✓ &nbsp; Integrity checks ready</div></div><div class="art-caption">MONITOR / VERIFY</div></div>
-            <div class="project-body"><div class="project-number">03 <span>SOFTWARE + SECURITY</span></div><h3>File Integrity Monitor</h3><p>A lightweight monitoring-tool concept that compares file hashes and highlights unexpected changes.</p><div class="project-bottom"><div class="tags"><span>Python</span><span>Hashing</span><span>Automation</span></div><button type="button" class="project-open" data-project="monitor" aria-label="View File Integrity Monitor details">↗</button></div></div>
-          </article>
-          <article class="project-card reveal" data-category="software">
-            <div class="project-art art-dashboard" aria-hidden="true"><div class="mini-app"><div class="mini-sidebar"><i></i><i></i><i></i></div><div class="mini-main"><div class="mini-head"></div><div class="mini-stats"><span></span><span></span><span></span></div><div class="mini-rows"><i></i><i></i><i></i></div></div></div><div class="art-caption">DESIGN / DEVELOP</div></div>
-            <div class="project-body"><div class="project-number">04 <span>SOFTWARE</span></div><h3>Developer Dashboard</h3><p>A clean dashboard concept for organizing tasks, visualizing progress, and making everyday workflows simpler.</p><div class="project-bottom"><div class="tags"><span>HTML / CSS</span><span>JavaScript</span><span>UI/UX</span></div><button type="button" class="project-open" data-project="dashboard" aria-label="View Developer Dashboard details">↗</button></div></div>
-          </article>
-        </div>
-        <div class="projects-footer reveal"><span>Good work starts with a good question.</span><a class="text-link" href="https://github.com" target="_blank" rel="noopener noreferrer" data-github>Find me on GitHub <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </section>
-
-    <section id="skills" class="skills-section section-pad" aria-labelledby="skills-title">
-      <div class="container skills-layout">
-        <div class="skills-intro reveal"><div class="section-label"><span class="index">03</span> / TOOLKIT</div><h2 id="skills-title" class="section-title">Tools I use.<br><em>Ideas I chase.</em></h2><p>Foundations across programming, systems, and security — always growing through real practice.</p><div class="skills-decor" aria-hidden="true"><span>01</span><span>101010</span><span>01</span></div></div>
-        <div class="skills-list reveal">
-          <div class="skill-row"><div class="skill-row-title"><span class="skill-index">01</span><h3>Programming</h3></div><div class="skill-tags"><span>Python</span><span>C / C++</span><span>JavaScript</span><span>HTML / CSS</span><span>SQL</span></div></div>
-          <div class="skill-row"><div class="skill-row-title"><span class="skill-index">02</span><h3>Cybersecurity</h3></div><div class="skill-tags"><span>Network analysis</span><span>Digital forensics</span><span>CTF practice</span><span>Secure coding</span></div></div>
-          <div class="skill-row"><div class="skill-row-title"><span class="skill-index">03</span><h3>Tools & Systems</h3></div><div class="skill-tags"><span>Linux</span><span>Git / GitHub</span><span>Wireshark</span><span>Docker</span><span>Bash</span></div></div>
-          <div class="skill-row"><div class="skill-row-title"><span class="skill-index">04</span><h3>How I Work</h3></div><div class="skill-tags"><span>Problem solving</span><span>Documentation</span><span>Research</span><span>Collaboration</span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resume" class="resume-section section-pad" aria-labelledby="resume-title">
-      <div class="container resume-layout">
-        <div class="resume-intro reveal"><div class="section-label"><span class="index">04</span> / BACKGROUND</div><h2 id="resume-title" class="section-title">The path so <em>far.</em></h2><p>A snapshot of what I'm learning and where I want to go. Customize the résumé template with your actual details before publishing.</p><a class="button button-outline" href="resume.html">Open my résumé <span aria-hidden="true">↗</span></a></div>
-        <div class="timeline reveal"><div class="timeline-item"><div class="timeline-icon">01</div><div class="timeline-content"><div class="timeline-top"><h3>Computer Science</h3><span>EDUCATION</span></div><p>Bachelor's degree studies · Add your university and expected graduation year.</p></div></div><div class="timeline-item"><div class="timeline-icon">02</div><div class="timeline-content"><div class="timeline-top"><h3>Hands-on Security Practice</h3><span>CONTINUOUS</span></div><p>Capture-the-flag exercises, system analysis, network investigations, and independent projects.</p></div></div><div class="timeline-item"><div class="timeline-icon">03</div><div class="timeline-content"><div class="timeline-top"><h3>What's Next</h3><span>LOOKING AHEAD</span></div><p>Opportunities to contribute, gain experience, and learn from talented engineering and security teams.</p></div></div></div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section section-pad" aria-labelledby="contact-title">
-      <div class="container contact-inner reveal"><div class="section-label"><span class="index">05</span> / GET IN TOUCH</div><p class="contact-kicker">HAVE AN IDEA, QUESTION, OR OPPORTUNITY?</p><h2 id="contact-title">Let's make something <em>matter.</em></h2><p class="contact-description">I'm always happy to connect with fellow builders, curious minds, and teams working on meaningful problems.</p><div class="contact-actions"><a href="mailto:hello@example.com" class="button button-primary contact-mail" data-email-link>Send an email <span aria-hidden="true">↗</span></a><button type="button" class="button button-ghost copy-email" aria-label="Copy email address"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg> Copy email</button></div><div class="contact-email" data-email-text>hello@example.com</div><div class="contact-rule"></div><div class="contact-socials"><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-github>GitHub ↗</a><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" data-linkedin>LinkedIn ↗</a><a href="resume.html">Résumé ↗</a></div></div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="container footer-inner"><a href="#top" class="footer-brand">Your Name<span>.</span></a><span>Designed with care. Built with HTML, CSS & JS.</span><a class="back-top" href="#top">Back to top ↑</a></div></footer>
-  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-  <dialog class="project-dialog" aria-labelledby="dialog-title"><form method="dialog"><button class="dialog-close" aria-label="Close project details">×</button></form><div class="dialog-eyebrow" id="dialog-category"></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><h3>The idea</h3><p id="dialog-details"></p><h3>Skills involved</h3><div class="dialog-tags" id="dialog-tags"></div><p class="dialog-note">These are starter project concepts. Replace them with your own verified work before sharing with recruiters.</p></dialog>
+<a class="text-link" href="#contact">More about working together <span aria-hidden="true">↗</span></a>
+<div class="about-highlights"><div><span aria-hidden="true" class="highlight-icon">⌘</span><strong>Top 6% at FAUST CTF</strong><span>Top 30 of 500 teams · 2026.</span></div><div><span aria-hidden="true" class="highlight-icon">◎</span><strong>Blue Team MVP</strong><span>NCAE Cyber Games · 2026.</span></div><div><span aria-hidden="true" class="highlight-icon">↗</span><strong>Top 10 at Raymond James CTF</strong><span>Incident response, attack-defense &amp; Jeopardy · 2026.</span></div></div>
+</div>
+</div>
+</section>
+<section aria-labelledby="projects-title" class="projects-section section-pad" id="projects">
+<div class="container">
+<div class="section-heading reveal"><div><div class="section-label"><span class="index">02</span> / SELECTED WORK</div><h2 class="section-title" id="projects-title">Selected projects and competitions.</h2></div><p>Hands-on engineering, offensive security, infrastructure, and competition work drawn from my résumé.</p></div>
+<div aria-label="Filter projects" class="filter-bar reveal" role="group"><button aria-pressed="true" class="filter-button active" data-filter="all">All work <span>07</span></button><button aria-pressed="false" class="filter-button" data-filter="security">Cybersecurity</button><button aria-pressed="false" class="filter-button" data-filter="software">Software</button></div>
+<div class="projects-grid"><article class="project-card reveal" data-category="security"><div aria-hidden="true" class="project-art art-packets"><div class="art-grid"></div><div class="flow-node flow-left">01</div><div class="flow-node flow-middle">02</div><div class="flow-node flow-right">03</div><svg class="flow-lines" viewbox="0 0 500 220"><path d="M108 110 H234 H368" fill="none" stroke="currentColor" stroke-dasharray="5 7" stroke-width="2"></path><path d="m359 103 9 7-9 7" fill="none" stroke="currentColor" stroke-width="2"></path></svg><div class="art-caption">FIRMWARE / SECURITY</div></div><div class="project-body"><div class="project-number">01 <span>OFFENSIVE SECURITY / FIRMWARE</span></div><h3>Router Vulnerability Analysis</h3><p>Found and exploited vulnerabilities in an Asus router to obtain root access, bypass the stock bootloader, and replace its legacy firmware.</p><div class="project-bottom"><div class="tags"><span>Vulnerability analysis</span><span>Firmware</span><span>Linux</span></div><button aria-label="View Router Vulnerability Analysis details" class="project-open" data-project="router" type="button">↗</button></div></div></article><article class="project-card reveal" data-category="software"><div aria-hidden="true" class="project-art art-dashboard"><div class="mini-app"><div class="mini-sidebar"><i></i><i></i><i></i></div><div class="mini-main"><div class="mini-head"></div><div class="mini-stats"><span></span><span></span><span></span></div><div class="mini-rows"><i></i><i></i><i></i></div></div></div><div class="art-caption">APPLICATIONS / DEFENSE</div></div><div class="project-body"><div class="project-number">02 <span>APPLICATIONS / BLUE TEAM</span></div><h3>NCAE Cyber Games</h3><p>Deployed and administered a Flask/Nginx application backed by PostgreSQL while responding to attacks from around 30 red-team participants.</p><div class="project-bottom"><div class="tags"><span>Flask</span><span>Nginx</span><span>PostgreSQL</span></div><button aria-label="View NCAE Cyber Games details" class="project-open" data-project="ncae" type="button">↗</button></div></div></article><article class="project-card reveal" data-category="security"><div aria-hidden="true" class="project-art art-ctf"><div class="ctf-terminal"><span class="term-prompt">$</span> review --evidence findings<br/><span class="term-output">&gt; analyze. document. improve.</span><br/><span class="term-prompt">$</span> <span class="term-cursor">▌</span></div><div class="ctf-badge">{ CTF }</div><div class="art-caption">COMPETE / DEFEND</div></div><div class="project-body"><div class="project-number">03 <span>ATTACK-DEFENSE / CTF</span></div><h3>FAUST CTF</h3><p>Competed in live attack-defense, balancing exploitation, service protection, and team coordination; finished among the top 30 of 500 teams.</p><div class="project-bottom"><div class="tags"><span>Attack-defense</span><span>Teamwork</span><span>Linux</span></div><button aria-label="View FAUST CTF details" class="project-open" data-project="faust" type="button">↗</button></div></div></article><article class="project-card reveal" data-category="software"><div aria-hidden="true" class="project-art art-dashboard"><div class="mini-app"><div class="mini-sidebar"><i></i><i></i><i></i></div><div class="mini-main"><div class="mini-head"></div><div class="mini-stats"><span></span><span></span><span></span></div><div class="mini-rows"><i></i><i></i><i></i></div></div></div><div class="art-caption">LOCAL AI / GUIDANCE</div></div><div class="project-body"><div class="project-number">04 <span>LOCAL AI / SOFTWARE</span></div><h3>VandyHacks AI Chatbot</h3><p>Built a locally hosted AI chatbot to provide disaster-recovery guidance without relying on external API services.</p><div class="project-bottom"><div class="tags"><span>Local AI</span><span>Software</span><span>Disaster recovery</span></div><button aria-label="View VandyHacks AI Chatbot details" class="project-open" data-project="vandy" type="button">↗</button></div></div></article><article class="project-card reveal" data-category="security"><div aria-hidden="true" class="project-art art-monitor"><div class="monitor-window"><div class="monitor-line"><span>sshd + samba</span><span class="monitor-live">● ACTIVE</span></div><div class="monitor-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="monitor-status">✓   TraceBit alerting configured</div></div><div class="art-caption">SYSTEMS / HARDENING</div></div><div class="project-body"><div class="project-number">05 <span>LINUX / INFRASTRUCTURE</span></div><h3>Linux Server Build &amp; Hardening</h3><p>Repurposed legacy hardware into a multiuser Linux server with SSH and Samba, adding TraceBit honey credentials to detect unauthorized access.</p><div class="project-bottom"><div class="tags"><span>Linux</span><span>SSH</span><span>Samba</span><span>TraceBit</span></div><button aria-label="View Linux Server Build &amp; Hardening details" class="project-open" data-project="server" type="button">↗</button></div></div></article><article class="project-card reveal" data-category="security"><div aria-hidden="true" class="project-art art-ctf"><div class="ctf-terminal"><span class="term-prompt">$</span> review --evidence findings<br/><span class="term-output">&gt; analyze. document. improve.</span><br/><span class="term-prompt">$</span> <span class="term-cursor">▌</span></div><div class="ctf-badge">{ CTF }</div><div class="art-caption">RESEARCH / RESPONSE</div></div><div class="project-body"><div class="project-number">06 <span>INCIDENT RESPONSE / CTF</span></div><h3>Raymond James CTF</h3><p>Earned a top-10 finish across Jeopardy challenges, attack-defense, and incident response, including evidence analysis and a formal report.</p><div class="project-bottom"><div class="tags"><span>Forensics</span><span>Incident response</span><span>Reporting</span></div><button aria-label="View Raymond James CTF details" class="project-open" data-project="raymond" type="button">↗</button></div></div></article><article class="project-card reveal" data-category="security"><div aria-hidden="true" class="project-art art-packets"><div class="art-grid"></div><div class="flow-node flow-left">01</div><div class="flow-node flow-middle">02</div><div class="flow-node flow-right">03</div><svg class="flow-lines" viewbox="0 0 500 220"><path d="M108 110 H234 H368" fill="none" stroke="currentColor" stroke-dasharray="5 7" stroke-width="2"></path><path d="m359 103 9 7-9 7" fill="none" stroke="currentColor" stroke-width="2"></path></svg><div class="art-caption">SIMULATION / TEAMWORK</div></div><div class="project-body"><div class="project-number">07 <span>LEADERSHIP / SECURITY</span></div><h3>Viceroy Gilded Guardian</h3><p>Captained a team to 3rd place in a simulated missile-defense scenario, using Sliver C2 to analyze services and neutralize the modeled threat.</p><div class="project-bottom"><div class="tags"><span>Team leadership</span><span>Sliver C2</span><span>Service analysis</span></div><button aria-label="View Viceroy Gilded Guardian details" class="project-open" data-project="viceroy" type="button">↗</button></div></div></article></div>
+<div class="projects-footer reveal"><span>Additional technical work and documentation available upon request.</span><a class="text-link" href="assets/Aden_Kallery_Resume.pdf" rel="noopener noreferrer" target="_blank">See all experience on my résumé <span aria-hidden="true">↗</span></a></div>
+</div>
+</section>
+<section aria-labelledby="skills-title" class="skills-section section-pad" id="skills">
+<div class="container skills-layout">
+<div class="skills-intro reveal"><div class="section-label"><span class="index">03</span> / TOOLKIT</div><h2 class="section-title" id="skills-title">Tools I use.<br/><em>Ideas I chase.</em></h2><p>A toolkit developed through coursework, personal projects, competitions, and security lab work.</p><div aria-hidden="true" class="skills-decor"><span>01</span><span>101010</span><span>01</span></div></div>
+<div class="skills-list reveal"><div class="skill-row"><div class="skill-row-title"><span class="skill-index">01</span><h3>Offensive Security</h3></div><div class="skill-tags"><span>Vulnerability analysis</span><span>Penetration testing</span><span>Reverse engineering</span><span>Exploit analysis</span><span>CTF attack-defense</span></div></div><div class="skill-row"><div class="skill-row-title"><span class="skill-index">02</span><h3>Languages &amp; Development</h3></div><div class="skill-tags"><span>Python</span><span>Java</span><span>C#</span><span>SQL</span><span>HTML</span><span>Flask</span><span>PostgreSQL</span></div></div><div class="skill-row"><div class="skill-row-title"><span class="skill-index">03</span><h3>Security Tools</h3></div><div class="skill-tags"><span>Ghidra</span><span>pwntools</span><span>Hashcat</span><span>Sliver C2</span><span>TraceBit</span></div></div><div class="skill-row"><div class="skill-row-title"><span class="skill-index">04</span><h3>Systems &amp; Infrastructure</h3></div><div class="skill-tags"><span>Linux / Unix</span><span>Windows</span><span>Nginx</span><span>SSH</span><span>Samba</span><span>Configuration &amp; hardening</span></div></div><div class="skill-row"><div class="skill-row-title"><span class="skill-index">05</span><h3>Certifications</h3></div><div class="skill-tags"><span>CompTIA Security+</span><span>GIAC GFACT</span><span>Cisco CCST Cybersecurity</span><span>AWS Cloud Practitioner</span><span>AWS AI Practitioner</span></div></div></div>
+</div>
+</section>
+<section aria-labelledby="resume-title" class="resume-section section-pad" id="resume">
+<div class="container resume-layout">
+<div class="resume-intro reveal"><div class="section-label"><span class="index">04</span> / BACKGROUND</div><h2 class="section-title" id="resume-title">The path so <em>far.</em></h2><p>See my education, hands-on technical work, competitions, and industry certifications. The original PDF is available to download.</p><a class="button button-outline" download="Aden_Kallery_Resume.pdf" href="assets/Aden_Kallery_Resume.pdf">Download résumé (PDF) <span aria-hidden="true">↗</span></a><p class="resume-secondary-link"><a class="text-link" href="resume.html">View accessible HTML résumé <span aria-hidden="true">↗</span></a></p></div>
+<div class="timeline reveal">
+<div class="timeline-item"><div class="timeline-icon">01</div><div class="timeline-content"><div class="timeline-top"><h3>University of Georgia</h3><span>EXPECTED MAY 2029</span></div><p>Computer Science · GPA 3.90/4.00 as listed on résumé.</p></div></div>
+<div class="timeline-item"><div class="timeline-icon">02</div><div class="timeline-content"><div class="timeline-top"><h3>Augusta University</h3><span>2025–2026</span></div><p>Transferred to UGA; President's List, Spring 2026.</p></div></div>
+<div class="timeline-item"><div class="timeline-icon">03</div><div class="timeline-content"><div class="timeline-top"><h3>Certifications &amp; engagement</h3><span>ONGOING</span></div><p>CompTIA Security+, GIAC GFACT, Cisco CCST Cybersecurity, two AWS certifications, and UGA Hack Pack.</p></div></div></div>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="contact-section section-pad" id="contact">
+<div class="container contact-inner reveal"><div class="section-label"><span class="index">05</span> / GET IN TOUCH</div><p class="contact-kicker">HAVE AN IDEA, QUESTION, OR OPPORTUNITY?</p><h2 id="contact-title">Let's make something <em>matter.</em></h2><p class="contact-description">For internships, collaboration, security projects, or conversation about what I am working on, reach me by personal or university email.</p><div class="contact-actions">
+<a class="button button-primary contact-mail" data-email-link="" href="mailto:aden.kallery@gmail.com">Personal email <span aria-hidden="true">↗</span></a>
+<a class="button button-ghost" href="mailto:ark43770@uga.edu">UGA email <span aria-hidden="true">↗</span></a>
+<button aria-label="Copy personal email address" class="button button-ghost copy-email" data-copy-email="aden.kallery@gmail.com" type="button">Copy personal email</button></div><div class="contact-email" data-email-text=""><a data-email-text="" href="mailto:aden.kallery@gmail.com">aden.kallery@gmail.com</a><span aria-hidden="true" class="email-divider">/</span><a href="mailto:ark43770@uga.edu">ark43770@uga.edu</a></div><div class="contact-rule"></div><div class="contact-socials"><a data-linkedin="" href="https://www.linkedin.com/in/akallery" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="assets/Aden_Kallery_Resume.pdf" rel="noopener noreferrer" target="_blank">Résumé PDF ↗</a><a href="resume.html">HTML résumé ↗</a></div></div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#top">Aden Kallery<span>.</span></a><span>Built with HTML, CSS &amp; JavaScript · © 2026</span><a class="back-top" href="#top">Back to top ↑</a></div></footer>
+<div aria-atomic="true" aria-live="polite" class="toast" role="status"></div>
+<dialog aria-labelledby="dialog-title" class="project-dialog"><form method="dialog"><button aria-label="Close project details" class="dialog-close">×</button></form><div class="dialog-eyebrow" id="dialog-category"></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><h3>Project details</h3><p id="dialog-details"></p><h3>Tools and focus areas</h3><div class="dialog-tags" id="dialog-tags"></div><p class="dialog-note">Project summaries are based on my résumé. Technical details and writeups are available on request.</p></dialog>
 </body>
 </html>

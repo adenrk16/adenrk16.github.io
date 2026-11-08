@@ -148,3 +148,11 @@ h1{font-size:clamp(3.7rem,5.55vw,5.8rem);line-height:1.08;letter-spacing:-.075em
   .resume-paper-section p,.resume-paper-section li{font-size:10.5px}
   .resume-paper-section h2{margin-bottom:7px}
 }
+
+/* Personal portfolio enhancements */
+.contact-email {display:flex;align-items:center;flex-wrap:wrap;gap:12px;overflow-wrap:anywhere}
+.contact-email a {color:#cfe7d5;text-decoration:underline;text-decoration-color:#658f76;text-underline-offset:4px}
+.contact-email .email-divider {color:#658f76}
+.resume-secondary-link {margin-top:18px!important}
+.resume-secondary-link .text-link {font-size:12px}
+@media(max-width:620px){.contact-email{align-items:flex-start;flex-direction:column;gap:9px}.contact-email .email-divider{display:none}}

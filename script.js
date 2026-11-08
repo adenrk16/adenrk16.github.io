@@ -2,46 +2,93 @@
 
 document.documentElement.classList.add("js");
 
-/*
-  EDIT YOUR DETAILS HERE.
-  The website has intentionally generic sample content until you personalize it.
-  Add your REAL project details in index.html and the projectDetails object below.
-*/
+/* Portfolio profile: edit the contact information below when it changes. */
 const PROFILE = {
-  name: "Your Name",
-  email: "hello@example.com",
-  github: "https://github.com",                 // Replace with your profile URL
-  linkedin: "https://www.linkedin.com",          // Replace with your profile URL
+  name: "Aden Kallery",
+  email: "aden.kallery@gmail.com",
+  schoolEmail: "ark43770@uga.edu",
+  github: "", // Add your personal GitHub URL here if you'd like to display it later.
+  linkedin: "https://www.linkedin.com/in/akallery"
 };
 
 const projectDetails = {
-  network: {
-    category: "CYBERSECURITY / NETWORKING",
-    title: "Network Traffic Analyzer",
-    description: "A sample project concept for examining packet captures and turning traffic data into clear observations.",
-    details: "Possible features include protocol breakdowns, traffic summaries, and anomaly highlighting. For your own project, describe the exact problem, your implementation, a screenshot or demo, and what you learned.",
-    tags: ["Python", "Wireshark", "TCP/IP", "Data analysis"]
+  "router": {
+    "category": "OFFENSIVE SECURITY / FIRMWARE",
+    "title": "Router Vulnerability Analysis",
+    "description": "Found and exploited vulnerabilities in an Asus router to obtain root access, bypass the stock bootloader, and replace its legacy firmware.",
+    "details": "Personal project · July 2026. Replaced stock firmware with an open-source alternative to improve administrative control and security.",
+    "tags": [
+      "Vulnerability analysis",
+      "Firmware",
+      "Linux"
+    ]
   },
-  ctf: {
-    category: "CYBERSECURITY / RESEARCH",
-    title: "CTF Notes & Writeups",
-    description: "A sample collection of structured writeups documenting security exercises and what they teach.",
-    details: "Organize each writeup around the challenge, the investigative process, evidence, and lessons learned. Publish only material permitted by event rules, and avoid disclosing real credentials or sensitive information.",
-    tags: ["Linux", "Digital forensics", "Research", "Documentation"]
+  "ncae": {
+    "category": "APPLICATIONS / BLUE TEAM",
+    "title": "NCAE Cyber Games",
+    "description": "Deployed and administered a Flask/Nginx application backed by PostgreSQL while responding to attacks from around 30 red-team participants.",
+    "details": "Website and database administrator · February 2026. Earned Blue Team MVP; the team placed 5th in the Southeast.",
+    "tags": [
+      "Flask",
+      "Nginx",
+      "PostgreSQL"
+    ]
   },
-  monitor: {
-    category: "SOFTWARE + SECURITY",
-    title: "File Integrity Monitor",
-    description: "A sample application concept for detecting changes in selected files.",
-    details: "Compare cryptographic hashes against a recorded baseline and generate readable change reports. For a real portfolio project, include test cases, known limitations, and your own repository URL.",
-    tags: ["Python", "SHA-256", "Automation", "Testing"]
+  "faust": {
+    "category": "ATTACK-DEFENSE / CTF",
+    "title": "FAUST CTF",
+    "description": "Competed in live attack-defense, balancing exploitation, service protection, and team coordination; finished among the top 30 of 500 teams.",
+    "details": "Attack-defense competitor · September 2026. A top-6% team placement among 500 teams.",
+    "tags": [
+      "Attack-defense",
+      "Teamwork",
+      "Linux"
+    ]
   },
-  dashboard: {
-    category: "SOFTWARE / FRONTEND",
-    title: "Developer Dashboard",
-    description: "A sample responsive productivity dashboard concept.",
-    details: "Organize tasks and surface progress in a simple, accessible interface. Replace this example with your own app, explain the stack and design choices, and link to the working demo or source.",
-    tags: ["HTML", "CSS", "JavaScript", "Accessibility"]
+  "vandy": {
+    "category": "LOCAL AI / SOFTWARE",
+    "title": "VandyHacks AI Chatbot",
+    "description": "Built a locally hosted AI chatbot to provide disaster-recovery guidance without relying on external API services.",
+    "details": "AI engineer · March 2026. The project won Best Financial Project Overall at VandyHacks.",
+    "tags": [
+      "Local AI",
+      "Software",
+      "Disaster recovery"
+    ]
+  },
+  "server": {
+    "category": "LINUX / INFRASTRUCTURE",
+    "title": "Linux Server Build & Hardening",
+    "description": "Repurposed legacy hardware into a multiuser Linux server with SSH and Samba, adding TraceBit honey credentials to detect unauthorized access.",
+    "details": "Personal project · January 2026. Focused on configuration, hardening, and useful security alerting for a self-managed server.",
+    "tags": [
+      "Linux",
+      "SSH",
+      "Samba",
+      "TraceBit"
+    ]
+  },
+  "raymond": {
+    "category": "INCIDENT RESPONSE / CTF",
+    "title": "Raymond James CTF",
+    "description": "Earned a top-10 finish across Jeopardy challenges, attack-defense, and incident response, including evidence analysis and a formal report.",
+    "details": "Invite-only competitor · October 2026. Presented findings and recommendations following the competition.",
+    "tags": [
+      "Forensics",
+      "Incident response",
+      "Reporting"
+    ]
+  },
+  "viceroy": {
+    "category": "LEADERSHIP / SECURITY",
+    "title": "Viceroy Gilded Guardian",
+    "description": "Captained a team to 3rd place in a simulated missile-defense scenario, using Sliver C2 to analyze services and neutralize the modeled threat.",
+    "details": "Team captain · April 2026. Conducted operations in the controlled competition simulation.",
+    "tags": [
+      "Team leadership",
+      "Sliver C2",
+      "Service analysis"
+    ]
   }
 };
 
@@ -150,21 +197,22 @@ function showToast(message) {
 }
 
 function initContact() {
-  $('.copy-email')?.addEventListener('click', async () => {
+  $$('[data-copy-email]').forEach(button => button.addEventListener('click', async () => {
+    const email = button.dataset.copyEmail;
     try {
-      if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(PROFILE.email);
+      if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(email);
       else {
-        const temp = document.createElement('textarea');
-        temp.value = PROFILE.email; temp.style.position = 'fixed'; temp.style.opacity = '0';
-        document.body.append(temp); temp.select();
-        const copied = document.execCommand('copy'); temp.remove();
+        const temporary = document.createElement('textarea');
+        temporary.value = email; temporary.style.position = 'fixed'; temporary.style.opacity = '0';
+        document.body.append(temporary); temporary.select();
+        const copied = document.execCommand('copy'); temporary.remove();
         if (!copied) throw Error('copy failed');
       }
       showToast('Email copied to clipboard');
     } catch {
-      showToast(`Email: ${PROFILE.email}`);
+      showToast(`Email: ${email}`);
     }
-  });
+  }));
 }
 
 function initRevealAndScroll() {
